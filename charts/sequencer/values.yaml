@@ -141,10 +141,6 @@ upgrades:
     #   appVersion: 2
     # priceFeed:
     #   nextId: "2"
-    #   marketAdminAddress: "astria1rsxyjrcm255ds9euthjx6yc3vrjt9sxrm9cfgm"
-    #   marketAuthorities:
-    #    - "astria1rsxyjrcm255ds9euthjx6yc3vrjt9sxrm9cfgm"
-    #    - "astria1xnlvg0rle2u6auane79t4p27g8hxnj36ja960z"
     #   markets:
     #     - name: "BTC/USD"
     #       providerConfigs:
@@ -408,7 +404,7 @@ storage:
 ingress:
   rpc:
     enabled: false
-    hostname: sequencer.localdev.me
+    hostname: sequencer.127.0.0.1.nip.io
     ingressClassName: nginx
     # For Kubernetes >= 1.18 you should specify the ingress-controller via the field ingressClassName
     # See https://kubernetes.io/blog/2020/04/02/improvements-to-the-ingress-api-in-kubernetes-1.18/#specifying-the-class-of-an-ingress
@@ -452,7 +448,7 @@ ingress:
     #      - chart-example.local
   grpc:
     enabled: false
-    hostname: sequencer.localdev.me
+    hostname: sequencer.127.0.0.1.nip.io
     ingressClassName: nginx
     # For Kubernetes >= 1.18 you should specify the ingress-controller via the field ingressClassName
     # See https://kubernetes.io/blog/2020/04/02/improvements-to-the-ingress-api-in-kubernetes-1.18/#specifying-the-class-of-an-ingress
